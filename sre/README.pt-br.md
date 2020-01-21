@@ -1,0 +1,3 @@
+# SRE
+
+Esse conteúdo agregará aos profissionais de tecnologia valores e conceitos que envolvem confiabilidade estratégica para produtos digitais, formando assim o mindset e skills para se tornar um **Site Reliability Engineer**. É importante notar que não só o desenvolvimento das habilidade técnicas (hard skills) é essencial, mas também o desenvolvimento de habilidades de relacionamento, liderança, posicionamento, visão de futuro são cruciais para o desempenho e destaque do profissional, assim chamamos de soft skills. 

@@ -37,3 +37,45 @@ Para entender o que é um produto digital um CNP deve entender o que é uma **op
 Um CNP gosta de estar na **bleeding edge** ao mesmo tempo possui total responsabilidade em adotar novos conceitos, tecnologias ou metodologias em seu portfólio profissional, essa característica está totalmente ligada a assumir riscos sem correr perigo. Um dos meios mais certeiros de se manter evoluindo é assumir novas responsabilidades e isso só é possível através de novos desafios que surgem das visões de direção, metas e objetivos futuros. Mas lembre-se: timing é importante, oportunidades para assumir novas responsabilidades e tomar riscos não devem atrapalhar os riscos e responsabilidades que você já assume.
 
 ## Requisitos para se tornar um SRE
+
+Um SRE Cloud Native é aquele que toma estratégias escaláveis, eficientes e planejadas calculando risco e timing certo para adotar ações ao mesmo tempo que aplica governança empoderando os envolvidos na concepção e desenvolvimento dos produtos.
+
+### SLI, SLO, SLA e Error Budget
+
+Entender a fundamentação, construção e propósito dessas métricas definirá o guia de evolução da qualidade de serviço e experiência do usuário que o SRE provém ao negócio. Através do Error Budget por exemplo podemos encontrar um meio lógico para direcionar o desenvolvimento entre trabalhar sobre débitos técnicos ou então implementar novas features e melhorias. Sempre lembrando que o objetivo é a experiência do usuário e não apenas métricas técnicas sobre o sistema.
+
+### RPO, RTO
+
+O SRE sempre está próximo de negócio e entende sobre os domínios envolvidos e quais os requisitos para manter uma corporação ou projeto saudáveis. É importante estar preparado para situações de crise e o quanto essas situações podem impactar o negócio, para guiar o foco desse preparo entender o RPO e o RTO e sua função no planejamento de contingência e recuperação dos sistemas que mantém o negócio disponível e operante.
+
+### Redes
+
+Alguns conceitos importantes sobre redes no ecossistema cloud native são: SDN, load balancing, network policies, control plane, data plane e etc. Existem várias abordagens sobre redes em aplicações cloud native, cada uma adequada para seu ambiente, iremos abordar o Istio para conceituar e de forma pragmática aprender sobre service mesh e operações de rede no Kubernetes.
+
+### Plataforma e Runtime
+
+Durante toda a evolução de plataformas e runtime para computação distribuída os objetivos sobre estabilidade, escalabilidade, eficiência de custo e disponibilidade sempre foram pilares para chegarmos hoje ao Kubernetes como plataforma de orquestração de infraestrutura e aprenderemos como podemos utilizá-lo para construir uma plataforma de serverless utilizando o **knative** assim criando nossa service mesh serverless.
+
+### Confiabilidade e SDLC (CI/CD)
+
+Um SRE entende que boa parte da confiabilidade do software está ligado ao SDLC, através do CI criamos artefatos com garantia da qualidade de código e integração com sistemas e features planejadas e do CD garantimos a qualidade e redução de impacto das entregas em produção habilitando assim a metodologia ágil e cultura DevOps para um pipeline de entrega contínua. Utilizaremos o Drone de CI e CD para nossas funções que serão executadas no ambiente de runtime.
+
+### Observabilidade
+
+Obervabilidade se divide em três principais tópicos: logging, tracing, monitoring. Para isso precisamos de sistemas com verbosidade e disponibilização de métricas se baseando nas SLIs, SLOs para construir o que é necessário de um sistema com observabilidade compatível com a requerida pelo negócio. Podemos então automatizar rotinas a partir de eventos para por exemplo: criar alertas, realizar acionamentos, self-healing e gerar reports de incidentes ou acompanhamento de SLOs/Error Budget. Para nossa stack de observabilidade utilizaremos: Elasticsearch, Kibana, Logstash, Prometheus, Grafana e AlertManager.
+
+### Arquitetura de Software, Computação Distribuída
+
+Como produto digital a arquitetura de um software dita o quanto aderente às práticas e conceitos cloud native é. Existe uma gama de conhecimentos envolvidos e discussões em constante evolução sobre esse tema, porém é importante que um SRE tenha o domínio dos 12 Factors e esteja em constante contato com o estudo sobre computação e dados distribuídos, envolvendo por exemplo temas como: event sourcing, CQRS, divisão de domínios e etc.
+
+### Capacity Planning e Escalabilidade
+
+Evitar lock-in e conhecer o comportamento das aplicações e sistemas envolvidos em um negócio nos permite definir as melhores estratégias para escalar conforme o crescimento da demanda no produto digital ao mesmo tempo que ganhamos a versatilidade da troca de fornecedores que fazem parte do side business para conseguirmos melhores contratos ou qualidade de serviço. Um SRE auxilía toda a instituição em que atua com conhecimentos e estratégias de avaliação multi-cloud, fornecedores de SaaS sempre otimizando o custo-benefício das decisões tomadas sobre o instrumental de tecnologia.
+
+### Automação, DevOps, SecOps e FinOps
+
+Um ponto bem importante a ser notado é que **SRE implementa DevOps**, isso é, as práticas de automação de DevOps são implementadas pelo SRE. Esse profissional também expande seu domínio para outras especializações como: SecOps (segurança da informação) e FinOps (capacity planning) sendo claro que cada um terá maior afinidade por um assunto se aprofundando e desempenhando melhor em seu interesse. SREs inclusive são categorizados através de 2 backgrounds: system engineers e software engineers. Criar estratégias de deploy (canary, blue-green, ramped), empoderar através da observabilidade ChatOps e automatizar rotinas do SDLC (NoOps) são funções de um SRE que englobam o mundo do DevOps.
+
+### Cultura
+
+Com a criação e aplicação do papel do SRE no mercado muitos aspectos culturais desse mindset acompanhou a importância de tópicos técnicos dos valores agregados por esse tipo de profissional. Demonstrar a importância e implementar a design review, acompanhar tendências de mercado (trabalhando muito próximo de pesquisa e desenvolvimento), empoderar times de produto e áreas de negócio ao mesmo tempo que diminui silos organizacionais são práticas culturais qualitativas para o negócio que devem ser estimulados pelo SRE.
